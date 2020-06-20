@@ -1,50 +1,16 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import Particles from 'react-particles-js';
+import { graphql } from "gatsby"
+// import Particles from 'react-particles-js';
 import SimpleSlider from "../components/works"
 import Img from "gatsby-image"
+import Layout from "../components/layout"
+
+import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return  (
-    <>
-      <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
-      <header className="header">
-      {/* <Particle /> */}
-      <Particles 
-        params={{ 
-          particles: { 
-            number: { 
-              value: 100, 
-              density: { 
-                enable: true, 
-                // value_area: 1000, 
-              } 
-            }, 
-          }, 
-        }} 
-      /> 
-        <div className="container">
-          <div className="site">
-            <a href="base-index.html">
-              <h1 class="logoTitle">Orfool inc.</h1>
-            </a>
-          </div>
-          <nav className="nav">
-            <ul>
-              <li><a href="base-index.html">HOME</a></li>
-              <li><a href="base-about.html">SERVICE</a></li>
-              <li><Link to={'/'}>ABOUT</Link></li>
-              <li><Link to={'/'}>BLOG</Link></li>
-              <li><Link to={'/'}>CONTACT</Link></li>
-            </ul>
-          </nav>
-        </div>
-        <section className="hero">
-          <div className="catch">
-            <h1>TRY ALL, ENJOY ALL<br /><p>テクノロジーの力であなたの仕事をサポートします！</p></h1>
-          </div>
-        </section>
-      </header>
+    <Layout>
+      <SEO />
       <section className="food">
         <div className="container">
           <h2 className="bar">SERVICE</h2>
@@ -110,53 +76,7 @@ export default function Home({ data }) {
           <SimpleSlider />
         </div>
       </section>
-
-
-      <footer className="footer">
-      {/* <Particles 
-        params={{ 
-          particles: { 
-            number: { 
-              value: 200, 
-              density: { 
-                enable: true, 
-                value_area: 1000, 
-              } 
-            }, 
-          }, 
-        }} 
-      />  */}
-        <div className="container">
-          <div className="site">
-            <a href="base-index.html">
-              {/* <img src="images/logo-w.svg" alt="ESSENTIALS" /> */}
-              <h2 class="logoTitle">Orfool inc.</h2>
-              <p>TRY ALL, ENJOY ALL</p>
-            </a>
-          </div>
-          <ul className="sns">
-            <li>
-              <a href="https://twitter.com/">
-                <i className="fab fa-twitter" />
-                <span className="sr-only">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://facebook.com/">
-                <i className="fab fa-facebook-square" />
-                <span className="sr-only">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="http://instagram.com/">
-                <i className="fab fa-instagram" />
-                <span className="sr-only">Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </>
+    </Layout>
   )
 }
 
