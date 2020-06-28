@@ -20,7 +20,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/clean-labo.jpg" alt="" />
+                <img src="../images/clean-labo.jpg" alt="" />
               </figure>
               <h4>クリーンラボ</h4>
             </div>
@@ -28,7 +28,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/next.jpg" alt="" />
+                <img src="../images/next.jpg" alt="" />
               </figure>
               <h4>ネクスト株式会社</h4>
             </div>
@@ -36,7 +36,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/soctama-image.png" alt="" />
+                <img src="../images/soctama-image.png" alt="" />
               </figure>
               <h4>ソクラテスの卵</h4>
             </div>
@@ -44,7 +44,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/cerebellum-kids.png" alt="" />
+                <img src="../images/cerebellum-kids.png" alt="" />
               </figure>
               <h4>セレベレムトレーニングスクール</h4>
             </div>
@@ -52,7 +52,7 @@ export default class SimpleSlider extends Component {
           <div>
            <div className="worksItem">
               <figure>
-                <img src="images/cinderella_lp.jpg" alt="" />
+                <img src="../images/cinderella_lp.jpg" alt="" />
               </figure>
               <h4>シンデレラタイムLP</h4>
             </div>
@@ -60,7 +60,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/cinderella_time.jpg" alt="" />
+                <img src="../images/cinderella_time.jpg" alt="" />
               </figure>
               <h4>シンデレラタイム</h4>
             </div>
@@ -68,7 +68,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/tophill-corporate.jpg" alt="" />
+                <img src="../images/tophill-corporate.jpg" alt="" />
               </figure>
               <h4>株式会社TOP HILL</h4>
             </div>
@@ -76,7 +76,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/seven-tantei.jpg" alt="" />
+                <img src="../images/seven-tantei.jpg" alt="" />
               </figure>
               <h4>セブン探偵社</h4>
             </div>
@@ -84,7 +84,7 @@ export default class SimpleSlider extends Component {
           <div>
            <div className="worksItem">
               <figure>
-                <img src="images/kenworks.jpg" alt="" />
+                <img src="../images/kenworks.jpg" alt="" />
               </figure>
               <h4>ケンワークス</h4>
             </div>
@@ -92,7 +92,7 @@ export default class SimpleSlider extends Component {
           <div>
             <div className="worksItem">
               <figure>
-                <img src="images/always_ssl.png" alt="" />
+                <img src="../images/always_ssl.png" alt="" />
               </figure>
               <h4>Always SSL</h4>
             </div>
