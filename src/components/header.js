@@ -21,7 +21,7 @@ export default () => (
   <div className="container">
     <div className="site">
       <Link to={`/`}>
-        <h1 class="logoTitle">Orfool inc.</h1>
+        <h1 className="logoTitle">Orfool inc.</h1>
       </Link>
     </div>
     <nav className="nav">

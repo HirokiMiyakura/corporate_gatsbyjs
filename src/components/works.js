@@ -18,7 +18,7 @@ export default class SimpleSlider extends Component {
         {/* <h2> Single Item</h2> */}
         <Slider {...settings}>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/clean-labo.jpg" alt="" />
               </figure>
@@ -26,7 +26,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/next.jpg" alt="" />
               </figure>
@@ -34,7 +34,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/soctama-image.png" alt="" />
               </figure>
@@ -42,7 +42,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/cerebellum-kids.png" alt="" />
               </figure>
@@ -50,7 +50,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-           <div class="worksItem">
+           <div className="worksItem">
               <figure>
                 <img src="images/cinderella_lp.jpg" alt="" />
               </figure>
@@ -58,7 +58,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/cinderella_time.jpg" alt="" />
               </figure>
@@ -66,7 +66,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/tophill-corporate.jpg" alt="" />
               </figure>
@@ -74,7 +74,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/seven-tantei.jpg" alt="" />
               </figure>
@@ -82,7 +82,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-           <div class="worksItem">
+           <div className="worksItem">
               <figure>
                 <img src="images/kenworks.jpg" alt="" />
               </figure>
@@ -90,7 +90,7 @@ export default class SimpleSlider extends Component {
             </div>
           </div>
           <div>
-            <div class="worksItem">
+            <div className="worksItem">
               <figure>
                 <img src="images/always_ssl.png" alt="" />
               </figure>
