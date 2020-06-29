@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 // import Particles from 'react-particles-js';
-import SimpleSlider from "../components/works"
+// import SimpleSlider from "../components/works"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-
+import Portfolio from "../components/portfolio"
 import SEO from "../components/seo"
 
 export default function Home({ data }) {
@@ -72,8 +72,9 @@ export default function Home({ data }) {
 
       <section className="works">
         <div className="container">
-          <h2 className="bar">WORKS</h2>
-          <SimpleSlider />
+          {/* <h2 className="bar">WORKS</h2> */}
+          {/* <SimpleSlider /> */}
+          <Portfolio />
         </div>
       </section>
 
