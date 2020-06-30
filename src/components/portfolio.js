@@ -81,6 +81,8 @@ const Portfolio = props => {
     }
   `)
 
+  console.log(data.works1.childImageSharp.fluid)
+
   const settings = {
     dots: true,
     infinite: true,
