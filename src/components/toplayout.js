@@ -1,7 +1,8 @@
 import React from "react"
 
-import Header from "./header"
-import Footer from "../components/footer"
+// import Header from "./header"
+import TopHeader from "./topheader"
+import Footer from "./footer"
 
 import "./layout.css"
 import "@fortawesome/fontawesome-svg-core/styles.css"
@@ -10,7 +11,7 @@ config.autoAddCss = false
 
 export default ({ children }) => (
   <div>
-    <Header />
+    <TopHeader />
     {children}
     <Footer />
   </div>

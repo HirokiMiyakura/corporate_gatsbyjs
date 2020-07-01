@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Particles from 'react-particles-js';
 
 export default () => (
-  <header className="header">
+  <header className="header top">
   <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script>
   <Particles 
     params={{ 
@@ -34,10 +34,10 @@ export default () => (
       </ul>
     </nav>
     </div>
-    {/* <section className="hero">
+    <section className="hero">
       <div className="catch">
         <h1>TRY ALL, ENJOY ALL<br /><p>テクノロジーの力であなたの仕事をサポートします！</p></h1>
       </div>
-    </section> */}
+    </section>
   </header>
 )

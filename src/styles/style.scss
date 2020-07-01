@@ -1,9 +1,24 @@
 @charset "UTF-8";
 
-header {
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.header.top {
   position: relative;
   background-color: #000;
   height: 100vh;
+}
+
+.header {
+	position: relative;
+  background-color: #000;
+	height: auto;
 }
 
 #tsparticles {
@@ -230,7 +245,10 @@ svg {
 .detail {
   margin-bottom: 30px;
   padding: 30px 0;
-  box-shadow: 0 0 15px rgba(0,0,0,.3);
+	box-shadow: 0 0 15px rgba(0,0,0,.3);
+	p {
+		padding: 0 15px;
+	}
 }
 
 .detail figure {
@@ -653,4 +671,66 @@ svg {
 }
 .pagenation .next [class*="fa-"] {
 	margin-left: 10px;
+}
+
+// アバウトページ
+
+.basicInfoTable {
+	width: 100%;
+	tr:nth-child(odd) {
+		background-color: #f7f7f7;
+	}
+	tr {
+		margin: 0;
+		td {
+			padding: 15px;
+			&:first-child {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.policyList {
+	color: #477294;
+	font-style: italic;
+}
+
+.containerThree {
+	// Flexbox display
+	@include flexbox();
+	width: 100%;
+	justify-content: space-around;
+	align-items: bottom;
+	.containerThreeItem {
+		width: 30%;
+		padding: 1% 1% 20px 1%;
+		text-align: center;
+		box-shadow: 0 0 15px rgba(0,0,0,.3);
+		img {
+			width: 57%!important;
+			height: 57%!important;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+		}
+		h3 {
+			margin-bottom: 16px;
+			font-size: 20px;
+		}
+		h4 {
+			margin-bottom: 30px;
+			color: #477294;
+			font-size: 19px;
+			font-weight: normal;
+		}
+		p {
+			line-height: 1.8;
+			padding: 0 15px;
+			font-size: 14px;
+		}
+	}
 }

@@ -3,13 +3,13 @@ import { graphql, Link } from "gatsby"
 // import Particles from 'react-particles-js';
 // import SimpleSlider from "../components/works"
 import Img from "gatsby-image"
-import Layout from "../components/layout"
+import TopLayout from "../components/toplayout"
 import Portfolio from "../components/portfolio"
 import SEO from "../components/seo"
 
 export default function Home({ data }) {
   return  (
-    <Layout>
+    <TopLayout>
       <SEO />
       <section className="food">
         <div className="container">
@@ -21,7 +21,7 @@ export default function Home({ data }) {
               </figure>
               <h3>ホームページ制作</h3>
               <p>HOME PAGE</p>
-              <p>甘くてすっぱくておいしい果実たち。<br />旬のフルーツを満喫します。</p>
+              <p>WordPressやGatsbyJSを用いたモダンで高速なサイトを制作いたします。</p>
             </div>
             <div className="detail">
               <figure>
@@ -29,7 +29,7 @@ export default function Home({ data }) {
               </figure>
               <h3>ウェブアプリケーション開発</h3>
               <p>WEB DEVELOPMENT</p>
-              <p>食事の基本となる穀物。<br />毎日の活動のエネルギー源になります。</p>
+              <p>Ruby on Railsを用いて、お客様の課題を解決いたします。</p>
             </div>
             <div className="detail">
               <figure>
@@ -37,7 +37,7 @@ export default function Home({ data }) {
               </figure>
               <h3>スマホアプリ開発</h3>
               <p>SMARTPHONE DEVELOPMENT</p>
-              <p>リラックスするのに欠かせない飲み物。<br />お気に入りの一杯はありますか？</p>
+              <p>Flutterを用いて、iPhone・Androidに対応したアプリを制作いたします。</p>
             </div>
           </div>
 
@@ -48,7 +48,7 @@ export default function Home({ data }) {
               </figure>
               <h3>SEO</h3>
               <p>SEARCH ENGINE OPTIMIZATION</p>
-              <p>甘くてすっぱくておいしい果実たち。<br />旬のフルーツを満喫します。</p>
+              <p>近年Googleが重視し始めたサイトの表示速度などにも幅広く対応いたします。</p>
             </div>
             <div className="detail">
               <figure>
@@ -56,7 +56,7 @@ export default function Home({ data }) {
               </figure>
               <h3>SEM</h3>
               <p>SEARCH ENGINE MARKETING</p>
-              <p>食事の基本となる穀物。<br />毎日の活動のエネルギー源になります。</p>
+              <p>最小の広告費用で最大の広告結果を実現します。</p>
             </div>
             <div className="detail">
               <figure>
@@ -64,7 +64,7 @@ export default function Home({ data }) {
               </figure>
               <h3>その他</h3>
               <p>OTHERS</p>
-              <p>リラックスするのに欠かせない飲み物。<br />お気に入りの一杯はありますか？</p>
+              <p>サイトの運営保守やメディア記事の挿入など、その他の業務もご相談ください。</p>
             </div>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Home({ data }) {
 
       <section>
       <div className="container">
-        <h2 className="sr-only">RECENT POSTS</h2>
+        <h2 className="bar">RECENT POSTS</h2>
         <div className="posts">
           {data.allContentfulBlogPost.edges.map(( { node } ) => (
             <article className="post" key={node.id}>
@@ -99,7 +99,7 @@ export default function Home({ data }) {
         </div>
       </div>
     </section>
-    </Layout>
+    </TopLayout>
   )
 }
 
