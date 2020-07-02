@@ -13,42 +13,54 @@ export default function Home({ data, location }) {
         pagetitle="株式会社Orfoolについて"
         pagedesc="株式会社Orfoolの概要説明ページです。"
         pagepath={location.pathname}
-        pageimg={data.about.childImageSharp.original.src}
-        pageimgw={data.about.childImageSharp.original.width}
-        pageimgh={data.about.childImageSharp.original.height}
+        pageimg={data.contact.childImageSharp.original.src}
+        pageimgw={data.contact.childImageSharp.original.width}
+        pageimgh={data.contact.childImageSharp.original.height}
       />
 
-      <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="contact" />
-        <div className="field half first">
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="name" />
+      <div className="eyecatch">
+        <figure>
+          <Img fluid={data.contact.childImageSharp.fluid} alt="お問い合わせ" />
+          {/* <Img fluid={data.service1.childImageSharp.fluid} alt="" /> */}
+        </figure>
+      </div>
+
+      <section className="food">
+        <div className="container">
+          <h2 className="bar">CONTACT</h2>
+          <form className="contactForm" name="contact" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <div className="field half first">
+              <label htmlFor="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div className="field half">
+              <label htmlFor="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </div>
+            <div className="field">
+              <label htmlFor="message">Message</label>
+              <textarea name="message" id="message" rows="6" />
+            </div>
+            <ul className="actions">
+              <li>
+                <input type="submit" value="Send Message" className="special" />
+              </li>
+              <li>
+                <input type="reset" value="Clear" />
+              </li>
+            </ul>
+          </form>
         </div>
-        <div className="field half">
-          <label htmlFor="email">Email</label>
-          <input type="text" name="email" id="email" />
-        </div>
-        <div className="field">
-          <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="6" />
-        </div>
-        <ul className="actions">
-          <li>
-            <input type="submit" value="Send Message" className="special" />
-          </li>
-          <li>
-            <input type="reset" value="Clear" />
-          </li>
-        </ul>
-      </form>
+      </section>
     </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    about: file(relativePath: { eq: "about-main.png" }) {
+    contact: file(relativePath: { eq: "contact-main.png" }) {
       childImageSharp {
         fluid(maxWidth: 1600) {
           ...GatsbyImageSharpFluid_withWebp
@@ -57,28 +69,6 @@ export const query = graphql`
           src
           height
           width
-        }
-      }
-    }
-
-    hmiyakura: file(relativePath: { eq: "hiroki-miyakura.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 120) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    tarai: file(relativePath: { eq: "pct01.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 120) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    dsaito: file(relativePath: { eq: "daichi-saito.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 120) {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }

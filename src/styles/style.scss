@@ -734,3 +734,51 @@ svg {
 		}
 	}
 }
+
+// お問い合わせページ
+
+.contactForm {
+	width: 100%;
+	.field {
+		margin-top: 10px;
+	}
+	input,
+	textarea {
+		width: 100%;
+		padding: 10px;
+		margin: 10px;
+	}
+	label {
+		font-weight: bold;
+	}
+	.actions {
+		list-style-type: none;
+		display: flex;
+		li {
+			width: 48%;
+			margin: 0 auto;
+			text-align: center;
+			padding: 10px;
+			border: none;
+			input {
+				font-weight: bold;
+				padding: 20px;
+				border: none;
+			}
+			&:first-child {
+				input {
+					background-color: navy;
+					font-size: 16px;
+					color: #fff;
+				}
+			}
+			&:last-child {
+				input {
+					background-color: #eee;
+					font-size: 16px;
+					color: silver;
+				}
+			}
+		}
+	}
+}
