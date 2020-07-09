@@ -2,16 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../components/layout"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faUtensils, faCheckSquare } from "@fortawesome/free-solid-svg-icons"
 import SEO from "../components/seo"
 
 export default function Home({ data, location }) {
   return  (
     <Layout>
       <SEO 
-        pagetitle="株式会社Orfoolについて"
-        pagedesc="株式会社Orfoolの概要説明ページです。"
+        pagetitle="株式会社Orfoolへのお問い合わせについて"
+        pagedesc="株式会社Orfoolのお問い合わせページです。"
         pagepath={location.pathname}
         pageimg={data.contact.childImageSharp.original.src}
         pageimgw={data.contact.childImageSharp.original.width}
@@ -21,7 +19,6 @@ export default function Home({ data, location }) {
       <div className="eyecatch">
         <figure>
           <Img fluid={data.contact.childImageSharp.fluid} alt="お問い合わせ" />
-          {/* <Img fluid={data.service1.childImageSharp.fluid} alt="" /> */}
         </figure>
       </div>
 
